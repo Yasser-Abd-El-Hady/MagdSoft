@@ -31,8 +31,10 @@ class _GridItemState extends State<GridItem> {
               padding: const EdgeInsets.all(5),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child:
-                    Image.network(widget.product.image!, fit: BoxFit.contain),
+                child: Image.asset(
+                    "assets/images/product${widget.product.id}.png",
+                    fit: BoxFit.contain),
+                // Image.network(widget.product.image!, fit: BoxFit.contain),
               ),
             ),
             Align(

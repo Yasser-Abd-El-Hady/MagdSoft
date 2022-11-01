@@ -59,9 +59,12 @@ class ProductScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(15),
                     margin: EdgeInsets.only(top: 1.7.h, left: 2.3.w),
                     child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: Image.asset("assets/images/1.png",
-                            fit: BoxFit.contain))),
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                          "assets/images/product${product.id}.png",
+                          fit: BoxFit.contain),
+                      // Image.network(product.image!, fit: BoxFit.contain),
+                    )),
                 SizedBox(
                   height: 17.2.h,
                   child: Row(
@@ -78,10 +81,12 @@ class ProductScreen extends StatelessWidget {
                                     margin: EdgeInsets.only(
                                         top: 3.1.h, bottom: 3.1.h, left: 5.3.w),
                                     child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(10),
-                                        child: Image.asset(
-                                            "assets/images/1.png",
-                                            fit: BoxFit.contain)));
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: Image.asset(
+                                          "assets/images/product${product.id}.png",
+                                          fit: BoxFit.contain),
+                                      // Image.network(product.image!, fit: BoxFit.contain),
+                                    ));
                               }))
                     ],
                   ),
