@@ -31,6 +31,8 @@ class ProductCubit extends Cubit<ProductState> {
       }
     } on DioError catch (e) {
       emit(ProductsError(e.response?.data['message']));
+    } catch (e) {
+      emit(ProductsError(e.toString()));
     }
   }
 

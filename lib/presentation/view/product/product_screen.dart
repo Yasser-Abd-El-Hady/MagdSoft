@@ -112,7 +112,7 @@ class ProductScreen extends StatelessWidget {
                                       fit: BoxFit.contain)),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 12),
+                              padding: EdgeInsets.only(left: 3.w),
                               child: Column(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
@@ -144,7 +144,7 @@ class ProductScreen extends StatelessWidget {
                 Padding(
                     padding: EdgeInsets.only(left: 2.3.w, bottom: 1.6.h),
                     child: SizedBox(
-                      height: 6.h,
+                      height: 7.2.h,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

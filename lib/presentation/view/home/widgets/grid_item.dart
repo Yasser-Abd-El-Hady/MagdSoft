@@ -64,11 +64,11 @@ class _GridItemState extends State<GridItem> {
                 fontFamily: "Inter",
                 fontWeight: FontWeight.w400,
                 color: AppColor.primary,
-                fontSize: 16.sp),
+                fontSize: 15.sp),
           ),
           Padding(
             padding: EdgeInsets.only(
-              top: 0.5.h,
+              top: 0.4.h,
               left: 2.3.w,
             ),
             child: CustomText(
@@ -76,7 +76,7 @@ class _GridItemState extends State<GridItem> {
                 fontFamily: "Inter",
                 fontWeight: FontWeight.w400,
                 color: AppColor.customGrey,
-                fontSize: 12.sp),
+                fontSize: 10.sp),
           ),
           Expanded(
             child: Row(
@@ -84,13 +84,13 @@ class _GridItemState extends State<GridItem> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 2.3.w, bottom: 0.7.h),
+                    padding: EdgeInsets.only(left: 2.3.w, bottom: 0.6.h),
                     child: CustomText(
                         text: "${widget.product.price} EGP",
                         fontFamily: "Inter",
                         fontWeight: FontWeight.w400,
                         color: AppColor.customGrey,
-                        fontSize: 10.sp),
+                        fontSize: 9.sp),
                   ),
                   Container(
                     width: 10.w,

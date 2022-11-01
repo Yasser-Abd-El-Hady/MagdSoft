@@ -29,6 +29,8 @@ class LoginCubit extends Cubit<LoginState> {
       }
     } on DioError catch (e) {
       emit(LoginFailure(e.response.toString()));
+    } catch (e) {
+      emit(LoginFailure(e.toString()));
     }
   }
 }

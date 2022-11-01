@@ -148,6 +148,7 @@ class LoginScreen extends StatelessWidget {
                                   CustomTextFormField(
                                     hintText: "Enter your Phone Number",
                                     controller: _phoneController,
+                                    keyboardType: TextInputType.phone,
                                     // validator: (input) {
                                     //   if (input!.isEmpty) {
                                     //     return "Enter your phone number";
@@ -178,7 +179,7 @@ class LoginScreen extends StatelessWidget {
                                   ? const CircularProgressIndicator()
                                   : CustomButton(
                                       text: "Login",
-                                      buttonHeight: 5.2.h,
+                                      buttonHeight: 5.h,
                                       onPressed: () {
                                         BlocProvider.of<LoginCubit>(context)
                                             .login(

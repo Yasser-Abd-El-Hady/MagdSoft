@@ -29,6 +29,8 @@ class HelpCubit extends Cubit<HelpState> {
       }
     } on DioError catch (e) {
       emit(ErrorState(e.response?.data['message']));
+    } catch (e) {
+      emit(ErrorState(e.toString()));
     }
   }
 }

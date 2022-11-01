@@ -38,6 +38,8 @@ class VerificationCubit extends Cubit<VerificationState> {
       }
     } on DioError catch (e) {
       emit(VerificationFailed(e.response.toString()));
+    } catch (e) {
+      emit(VerificationFailed(e.toString()));
     }
   }
 }
