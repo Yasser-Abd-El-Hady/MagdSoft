@@ -1,4 +1,4 @@
-# magdsoft_flutter_structure
+# MagdSoft Task
 
 magdsoft mobile application structure for flutter
 
