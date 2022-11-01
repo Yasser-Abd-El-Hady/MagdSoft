@@ -2,15 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:magdsoft_flutter_structure/business_logic/product_cubit/product_cubit.dart';
-import 'package:magdsoft_flutter_structure/constants/end_points.dart';
 import 'package:magdsoft_flutter_structure/data/models/product_model.dart';
 import 'package:magdsoft_flutter_structure/presentation/styles/colors.dart';
 import 'package:magdsoft_flutter_structure/presentation/view/home/widgets/category_widget.dart';
 import 'package:magdsoft_flutter_structure/presentation/view/home/widgets/image_ads_widget.dart';
-import 'package:magdsoft_flutter_structure/presentation/widget/custom_container.dart';
-import 'package:magdsoft_flutter_structure/presentation/widget/custom_text.dart';
 import 'package:magdsoft_flutter_structure/presentation/widget/gradient_background.dart';
-import 'package:magdsoft_flutter_structure/presentation/view/home/widgets/grid_item.dart';
 import 'package:sizer/sizer.dart';
 
 import 'widgets/header_widget.dart';

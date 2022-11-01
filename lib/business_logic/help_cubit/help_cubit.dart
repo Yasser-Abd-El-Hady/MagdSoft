@@ -10,8 +10,8 @@ part 'help_state.dart';
 
 class HelpCubit extends Cubit<HelpState> {
   HelpCubit() : super(HelpInitial());
-  List<HelpModel> _allhelps = [];
 
+  List<HelpModel> _allhelps = [];
   List<HelpModel> get allhelp => _allhelps;
 
   Future getData() async {

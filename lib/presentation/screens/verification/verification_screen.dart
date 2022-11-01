@@ -6,10 +6,8 @@ import 'package:magdsoft_flutter_structure/presentation/styles/colors.dart';
 
 import 'package:magdsoft_flutter_structure/business_logic/verification_cubit/verification_cubit.dart';
 import 'package:magdsoft_flutter_structure/presentation/widget/custom_button.dart';
-import 'package:magdsoft_flutter_structure/presentation/widget/custom_container.dart';
 import 'package:magdsoft_flutter_structure/presentation/widget/custom_text.dart';
 import 'package:magdsoft_flutter_structure/presentation/widget/gradient_background.dart';
-import 'package:magdsoft_flutter_structure/presentation/widget/text_form_field.dart';
 import 'package:magdsoft_flutter_structure/presentation/widget/toast.dart';
 import 'package:sizer/sizer.dart';
 

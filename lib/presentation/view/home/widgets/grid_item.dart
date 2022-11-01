@@ -31,6 +31,10 @@ class _GridItemState extends State<GridItem> {
               padding: const EdgeInsets.all(5),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
+                /**
+                  * show image from assets to follow task instructions
+                  * but it working correct from network also
+                  */
                 child: Image.asset(
                     "assets/images/product${widget.product.id}.png",
                     fit: BoxFit.contain),

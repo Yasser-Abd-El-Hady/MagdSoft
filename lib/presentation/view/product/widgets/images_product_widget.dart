@@ -20,6 +20,10 @@ class ProductImagesWidget extends StatelessWidget {
           margin: EdgeInsets.only(top: 1.7.h, left: 2.3.w),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
+            /**
+             * show image from assets to follow task instructions
+             * but it working correct from network also
+             */
             child: Image.asset("assets/images/product${product.id}.png",
                 fit: BoxFit.contain),
             // Image.network(product.image!, fit: BoxFit.contain),
@@ -41,6 +45,10 @@ class ProductImagesWidget extends StatelessWidget {
                               top: 3.1.h, bottom: 3.1.h, left: 5.3.w),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
+                            /**
+                              * show image from assets to follow task instructions
+                              * but it working correct from network also
+                              */
                             child: Image.asset(
                                 "assets/images/product${product.id}.png",
                                 fit: BoxFit.contain),

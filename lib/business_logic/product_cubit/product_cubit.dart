@@ -36,6 +36,7 @@ class ProductCubit extends Cubit<ProductState> {
     }
   }
 
+  ///this method for filter showing products by category
   void filterProducts({String? category}) {
     if (category != null) {
       _filteredproducts =

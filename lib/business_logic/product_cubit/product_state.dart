@@ -10,6 +10,7 @@ class ProductsFetched extends ProductState {
   ProductsFetched(this.message);
 }
 
+/// this state emit if error occure when fetch data from backend
 class ProductsError extends ProductState {
   final String errorMessage;
   ProductsError(this.errorMessage);

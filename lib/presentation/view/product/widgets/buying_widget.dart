@@ -17,25 +17,25 @@ class BuyingWidget extends StatelessWidget {
     return Padding(
         padding: EdgeInsets.only(left: 2.3.w, bottom: 1.4.h),
         child: SizedBox(
-          height: 6.h,
+          height: 6.4.h,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomText(
                         text: "Price",
                         fontFamily: "Inter",
                         fontWeight: FontWeight.w400,
-                        fontSize: 13.sp,
+                        fontSize: 12.sp,
                         color: AppColor.lightGrey),
                     CustomText(
                         text: "${product.price} EGP",
                         fontFamily: "Inter",
                         fontWeight: FontWeight.w400,
-                        fontSize: 15.sp,
+                        fontSize: 13.sp,
                         color: AppColor.customGrey)
                   ]),
               Container(
