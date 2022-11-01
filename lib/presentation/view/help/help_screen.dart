@@ -39,6 +39,9 @@ class _HelpScreenState extends State<HelpScreen> {
                     color: AppColor.white),
               ),
               Expanded(
+                  /**
+               * if data is comming from database show CircularProgressIndicator
+               */
                   child: state is HelpInitial
                       ? const Center(child: CircularProgressIndicator())
                       : ListView.builder(

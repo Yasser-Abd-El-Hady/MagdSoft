@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:magdsoft_flutter_structure/constants/end_points.dart';
+import 'package:magdsoft_flutter_structure/presentation/screens/verification/widgets/verify_account_widget.dart';
 import 'package:magdsoft_flutter_structure/presentation/styles/colors.dart';
 
 import 'package:magdsoft_flutter_structure/business_logic/verification_cubit/verification_cubit.dart';
@@ -44,66 +45,15 @@ class VerificationScreen extends StatelessWidget {
                   key: _formKey,
                   child: Column(
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                            top: 14.8.h,
-                            bottom: 10.9.h,
-                            left: 10.w,
-                            right: 10.w),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CustomContainer(
-                              width: 16.3.w,
-                              height: 8.6.h,
-                              borderRadius: 15,
-                              child: CustomTextFormField(
-                                  controller: _first,
-                                  fontSize: 40,
-                                  keyboardType: TextInputType.number,
-                                  maxLength: 1,
-                                  textAlign: TextAlign.center,
-                                  textColor: AppColor.primary),
-                            ),
-                            CustomContainer(
-                              width: 16.3.w,
-                              height: 8.6.h,
-                              borderRadius: 15,
-                              child: CustomTextFormField(
-                                  controller: _second,
-                                  fontSize: 40,
-                                  keyboardType: TextInputType.number,
-                                  maxLength: 1,
-                                  textAlign: TextAlign.center,
-                                  textColor: AppColor.primary),
-                            ),
-                            CustomContainer(
-                              width: 16.3.w,
-                              height: 8.6.h,
-                              borderRadius: 15,
-                              child: CustomTextFormField(
-                                  controller: _third,
-                                  fontSize: 40,
-                                  keyboardType: TextInputType.number,
-                                  maxLength: 1,
-                                  textAlign: TextAlign.center,
-                                  textColor: AppColor.primary),
-                            ),
-                            CustomContainer(
-                              width: 16.3.w,
-                              height: 8.6.h,
-                              borderRadius: 15,
-                              child: CustomTextFormField(
-                                  controller: _fourth,
-                                  fontSize: 40,
-                                  keyboardType: TextInputType.number,
-                                  maxLength: 1,
-                                  textAlign: TextAlign.center,
-                                  textColor: AppColor.primary),
-                            ),
-                          ],
-                        ),
-                      ),
+                      /**
+                       * this widget contains text fields for writing
+                       * verification code
+                       */
+                      VerifyAccountWidget(
+                          first: _first,
+                          second: _second,
+                          third: _third,
+                          fourth: _fourth),
                       GestureDetector(
                           child: CustomText(
                               text: "Resend Code",
